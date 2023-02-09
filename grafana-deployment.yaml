@@ -13,8 +13,7 @@ spec:
       name: grafana
       labels:
         app: grafana
-
-  spec:
+    spec:
       containers:
       - name: grafana
         image: grafana/grafana:latest
@@ -40,4 +39,4 @@ spec:
         - name: grafana-datasources
           configMap:
               defaultMode: 420
-              name: grafana-datasources
+              name: grafana-datasource
