@@ -59,7 +59,7 @@ spec:
               cpu: 250m
               memory: 1Gi
           volumeMounts:
-            - mountPath: /var/lib/grafana
+            - mountPath: grafana-storage:/var/lib/grafana
               name: grafana-pv
       volumes:
         - name: grafana-pv
