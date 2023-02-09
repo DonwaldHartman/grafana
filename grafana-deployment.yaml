@@ -31,6 +31,7 @@ spec:
       containers:
         - name: grafana
           image: grafana/grafana:8.4.4
+          user: "0"
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 3000
@@ -59,7 +60,7 @@ spec:
               cpu: 250m
               memory: 1Gi
           volumeMounts:
-            - mountPath: grafana-storage:/var/lib/grafana
+            - mountPath: /var/lib/grafana
               name: grafana-pv
       volumes:
         - name: grafana-pv
