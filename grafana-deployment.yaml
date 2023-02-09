@@ -13,7 +13,6 @@ spec:
       name: grafana
       labels:
         app: grafana
-   spec:
      securityContext:
        runAsUser: 0
        runAsGroup: 0
