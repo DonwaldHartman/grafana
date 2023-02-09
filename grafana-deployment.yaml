@@ -25,9 +25,9 @@ spec:
         app: grafana
     spec:
       securityContext:
-        runAsUser: 472
-        runAsGroup: 472
-        fsGroup: 472
+        runAsUser: 0
+        runAsGroup: 0
+        fsGroup: 0
         supplementalGroups:
           - 0
       containers:
