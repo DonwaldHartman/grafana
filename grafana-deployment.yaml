@@ -13,13 +13,14 @@ spec:
       name: grafana
       labels:
         app: grafana
+  spec:        
      securityContext:
        runAsUser: 0
        runAsGroup: 0
        fsGroup: 0
        supplementalGroups:
           - 0
-   spec:
+  spec:
       containers:
       - name: grafana
         image: grafana/grafana:latest
