@@ -39,4 +39,4 @@ spec:
         - name: grafana-datasources
           configMap:
               defaultMode: 420
-              name: grafana-datasource
+              name: grafana-datasources
