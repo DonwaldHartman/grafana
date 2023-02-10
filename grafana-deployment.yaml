@@ -44,4 +44,4 @@ spec:
               name: grafana-datasources
         - name: grafana-allow
           configMap:
-            name: grafan-allow
+            name: grafana-allow
