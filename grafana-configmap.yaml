@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: grafana-allow
+  namespace: monitoring
+data:
+  grafana.ini: |-
+    allow_embedding = true
+    [auth.anonymous]
+    # enable anonymous access
+    enabled = true

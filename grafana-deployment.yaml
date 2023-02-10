@@ -30,6 +30,8 @@ spec:
         volumeMounts:
           - mountPath: /var/lib/grafana
             name: grafana-storage
+          - mountPath: /etc/grafana/
+            name: grafana-allow
           - mountPath: /etc/grafana/provisioning/datasources
             name: grafana-datasources
             readOnly: false
@@ -40,3 +42,6 @@ spec:
           configMap:
               defaultMode: 420
               name: grafana-datasources
+        - name: grafana-allow
+          configMap:
+            name: grafan-allow
